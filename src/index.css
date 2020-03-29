@@ -1,3 +1,6 @@
+/* importing fonts */
+@import url('https://fonts.googleapis.com/css?family=Dosis|Inconsolata:700&display=swap');
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,9 +8,62 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: linear-gradient(45deg, #1ea2b2,#5cbe5c, #f5f5ff);
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  min-height: 100vh;
+}
+
+.text h1 {
+  text-align: center;
+  font-family: 'Inconsolata', monospace;
+}
+
+.author h2 {
+  text-align: right;
+  font-family: 'Dosis', sans-serif;
+}
+
+.quote-box {
+  width: 700px;
+  margin: 20px;
+  padding: 40px;
+  border: 2px solid #e0cece;
+  border-radius: 20px;
+  background-color: #acb5b5;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.new-quote {
+  font-size: 1.2em;
+  background-color: #5cbe5c;
+  padding: 10px;
+  border: 0;
+  border-radius: 30px;
+}
+
+.new-quote:hover {
+  cursor: pointer;
+  background-color: #e0cece;
+}
+
+.buttons .tweet-quote {
+  color: rgb(29, 161, 242);
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 2em;
 }
