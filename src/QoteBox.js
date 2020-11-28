@@ -27,6 +27,7 @@ function QuoteBox (props) {
           className='tweet-quote'
           id='tweet-quote'
           target='_blank'
+          rel="noopener noreferrer"
           href={`https://twitter.com/intent/tweet?hashtags=quotes&related=MuhmdHassn,freecodecamp&text= ${encodeURIComponent('"' + quoteText + '" ' + quoteAuthor)}`}
           >
             <FontAwesomeIcon
